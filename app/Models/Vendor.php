@@ -27,4 +27,11 @@ class Vendor extends Model
 
         return response()->json($transformedData);
     }
+
+    public function getDetails(int $id): object
+    {
+        $data = $this->provider->fetchDetails($id);
+
+        return $data;
+    }
 }
