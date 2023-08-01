@@ -231,6 +231,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
     ],
 
+    'fleetio_api_key' => env('FLEETIO_API_KEY'),
+    'fleetio_account_token' => env('FLEETIO_ACCOUNT_TOKEN'),
     'fleetio_base_url' => env('FLEETIO_BASE_URL'),
     'vendor_list_url' => env('VENDOR_LIST_URL'),
 ];
