@@ -6,8 +6,6 @@
 @section('contents')
 {{Form::label('lbl-page-header', 'Vendor Details', ['id' => 'lbl-page-header'])}}
 <div class="dv-base">
-    <div class="page-layout">
-
-    </div>
+    @include('vendors.details-form')
 </div>
 @endSection
