@@ -1,6 +1,16 @@
 html {height: 100%}
 body {height: 100%; margin: 0px}
-#lbl-page-header {color:#4c4c4c; font-weight: 600; margin-bottom: 12px }
+#lbl-page-header {
+    background: #fff;
+    border-radius: 5px;
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    width: 100%;
+}
 .base-container {height: inherit}
 .dv-top-menu{align-items: center; background: #0b5ed7; display: flex;height: 7%; padding: 8px 18px;}
 .dv-top-menu .app-title{color: white; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;}
