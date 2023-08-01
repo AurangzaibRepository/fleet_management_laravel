@@ -24,4 +24,9 @@
             <i class="fas fa-fan"></i><span>Issues</span>
         </a>
     </li>
+    <li>
+        <a href="{{route('logout')}}">
+            <i class="fas fa-sign-out"></i><span>Logout</span>
+        </a>
+    </li>
 </ul>
