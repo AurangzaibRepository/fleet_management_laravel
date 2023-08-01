@@ -11,14 +11,14 @@ class VendorTransformer
         ];
 
         foreach ($data as $index => $row) {
-            $address = $row['street_address'].'<br/>'.$row['city'].', '.$row['postal_code'].', '.$row['country'];
+            $address = $row->street_address.'<br/>'.$row->city.', '.$row->postal_code.', '.$row->country;
 
             $response['data'][] = [
                 ++$index,
-                $row['name'],
+                $row->name,
                 $address,
-                $row['phone'],
-                $row['website'],
+                $row->phone,
+                $row->website,
             ];
         }
 
