@@ -2,6 +2,7 @@
 
 namespace App\Rules;
 
+use App\Models\User;
 use Illuminate\Contracts\Validation\Rule;
 
 class VerifyPasswordRule implements Rule
@@ -11,9 +12,9 @@ class VerifyPasswordRule implements Rule
      *
      * @return void
      */
-    public function __construct()
-    {
-        //
+    public function __construct(
+        private email $email,
+    ) {
     }
 
     /**
@@ -25,7 +26,6 @@ class VerifyPasswordRule implements Rule
      */
     public function passes($attribute, $value)
     {
-        //
     }
 
     /**
