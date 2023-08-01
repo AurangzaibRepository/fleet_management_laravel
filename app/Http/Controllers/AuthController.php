@@ -22,7 +22,7 @@ class AuthController extends Controller
 
     public function loginUser(Request $request)
     {
-        //password => lily_admin
+        //password => fleetio_admin
         $validator = Validator::make($request->all(), [
             'email' => 'required',
             'password' => 'required',
@@ -37,7 +37,8 @@ class AuthController extends Controller
                 ->withInput();
         }
 
-        $user = User::where('email', $request->email)->where('role', 'admin')->first();
+        $user = User::where('email', $request->email)
+                ->first();
 
         if (! $user) {
             return redirect()
