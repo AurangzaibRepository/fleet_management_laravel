@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Http;
 
 class BaseProvider
 {
-    protected function getRequest(string $url): array
+    protected function getRequest(string $url): array|object
     {
         $url = config('app.fleetio_base_url').$url;
 
