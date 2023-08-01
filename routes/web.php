@@ -28,6 +28,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::prefix('vendors')->group(function () {
         Route::get('/', [VendorsController::class, 'index'])->name('vendors');
         Route::get('/listing', [VendorsController::class, 'listing']);
+        Route::get('/{id}', [VendorsController::class, 'details']);
     });
 
     // Dashboard
