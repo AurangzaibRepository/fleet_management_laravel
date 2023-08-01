@@ -4,6 +4,7 @@ namespace App\Rules;
 
 use App\Models\User;
 use Illuminate\Contracts\Validation\Rule;
+use Illuminate\Support\Facades\Hash;
 
 class VerifyPasswordRule implements Rule
 {
@@ -26,6 +27,14 @@ class VerifyPasswordRule implements Rule
      */
     public function passes($attribute, $value)
     {
+        $user = User::where('email', $this->email)
+                ->first();
+
+        if (!Hash::check($value, $user->password)) {
+            return false;
+        }
+
+        return true;
     }
 
     /**
