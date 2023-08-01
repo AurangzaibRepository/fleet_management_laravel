@@ -1,5 +1,5 @@
 .ul-left-menu a.vendors {background: #f2f2f2; border-left: 3px solid #0b5ed7; font-weight: 600;}
-.ul-left-menu a.dashboard .vendors,
+.ul-left-menu a.vendors span,
 .ul-left-menu a.vendors svg {
     color: #0b5ed7
 }
