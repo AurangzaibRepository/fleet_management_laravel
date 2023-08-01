@@ -27,9 +27,9 @@ Route::group(['middleware' => 'auth'], function () {
     // Vendors
     Route::prefix('vendors')->group(function () {
         Route::get('/', [VendorsController::class, 'index'])->name('vendors');
+        Route::get('/listing', [VendorsController::class, 'listing']);
     });
 
     // Dashboard
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
-    Route::post('dashboard/get-activity-data', [DashboardController::class, 'activityData'])->name('activityData');
 });
