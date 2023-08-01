@@ -139,7 +139,8 @@ form label, .modal label {
 }
 
 form .form-control {
-    font-size: 13px;
+    font-size: 14px;
+    pointer-events: none;
 }
 
 form .btn-secondary {
