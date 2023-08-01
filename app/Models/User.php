@@ -2,17 +2,17 @@
 
 namespace App\Models;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Support\Collection;
-use Illuminate\Http\Request;
-use Laravel\Sanctum\HasApiTokens;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 
 class User extends Authenticatable
 {
     public $timestamps = false;
+
     protected $dates = ['createdAt', 'updatedAt', 'whatsapp_session_time'];
 
     public function getCreatedAtAttribute($value): string
@@ -27,10 +27,10 @@ class User extends Authenticatable
 
     public function getListing(Request $request): JsonResponse
     {
-        $response= ['data' => []];
+        $response = ['data' => []];
         $date = date('Y-m-d H:i:s');
-        $words = ['hour', 'hours', 'minute', 'minutes','second', 'seconds'];
-    
+        $words = ['hour', 'hours', 'minute', 'minutes', 'second', 'seconds'];
+
         $userListing = $this->applyFilters($request);
 
         foreach ($userListing as $user) {
@@ -40,13 +40,13 @@ class User extends Authenticatable
             $word = explode(' ', $lastActivityMsg)[1];
 
             if (in_array($word, $words)) {
-                $lastActivityMsg = explode(' ', $lastActivityMsg)[0].' '. explode(' ', $lastActivityMsg)[1] . ' ago';
+                $lastActivityMsg = explode(' ', $lastActivityMsg)[0].' '.explode(' ', $lastActivityMsg)[1].' ago';
             }
 
-            if (!in_array($word, $words)) {
-                $lastActivityMsg = (explode(' ', $lastActivityMsg)[0]) . ' ' . explode(' ', $lastActivityMsg)[1] . ' ago';
+            if (! in_array($word, $words)) {
+                $lastActivityMsg = (explode(' ', $lastActivityMsg)[0]).' '.explode(' ', $lastActivityMsg)[1].' ago';
             }
-        
+
             array_push($response['data'], [
                 $user->user_name,
                 $user->id,
@@ -66,7 +66,7 @@ class User extends Authenticatable
     {
         User::where('id', $userID)
             ->update([
-                'status' => $status
+                'status' => $status,
             ]);
     }
 
@@ -89,7 +89,7 @@ class User extends Authenticatable
 
             if ($request->status == 'Current') {
                 $userListing = $userListing->where('logged_in', 1)
-                                           ->orderBy('login_time', 'desc');
+                    ->orderBy('login_time', 'desc');
             }
         }
 
@@ -97,7 +97,7 @@ class User extends Authenticatable
             $joiningDate = explode(' - ', $request->joining_date);
             $startDate = Carbon::createFromFormat('d/m/Y', $joiningDate[0])->format('Y-m-d');
             $endDate = Carbon::createFromFormat('d/m/Y', $joiningDate[1])->format('Y-m-d');
-            
+
             $userListing = $userListing->whereRaw("(createdAt between '{$startDate}' and '{$endDate}')");
         }
 
@@ -107,21 +107,22 @@ class User extends Authenticatable
 
         if ($request->whatsapp == 'true') {
             $userListing = $userListing->where('whatsapp_session', 1)
-                                        ->orderBy('whatsapp_session_time', 'desc');
+                ->orderBy('whatsapp_session_time', 'desc');
         }
 
         $userListing = $userListing->orderBy('id', 'desc');
+
         return $userListing->get();
     }
 
     public function get(): JsonResponse
     {
         $data = $this
-                    ->where('role', 'User')
-                    ->where('user_name', '!=', null)
-                    ->orderBy('user_name')
-                    ->select('id', 'user_name')
-                    ->get();
+            ->where('role', 'User')
+            ->where('user_name', '!=', null)
+            ->orderBy('user_name')
+            ->select('id', 'user_name')
+            ->get();
 
         return response()->json($data);
     }

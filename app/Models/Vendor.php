@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 class Vendor extends Model
 {
     use HasFactory;
+
     protected $table = null;
 
     public function __construct(
@@ -21,5 +22,8 @@ class Vendor extends Model
     public function getListing(): JsonResponse
     {
         $data = $this->provider->fetchList();
+        $transformedData = $this->transformer->transformList($data);
+
+        return response()->json($transformedData);
     }
 }
