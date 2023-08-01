@@ -13,7 +13,7 @@ class VerifyPasswordRule implements Rule
      *
      * @return void
      */
-    public function __construct(string $email)
+    public function __construct(string $email = null)
     {
         $this->email = $email;
     }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Rules\VerifyPasswordRule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class LoginRequest extends FormRequest
@@ -10,7 +11,7 @@ class LoginRequest extends FormRequest
     {
         return [
             'email' => 'required|email|exists:users',
-            'password' => 'required',
+            'password' => ['required', new VerifyPasswordRule($this->post('email'))],
         ];
     }
 
