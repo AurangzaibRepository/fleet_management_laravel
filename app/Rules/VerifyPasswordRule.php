@@ -28,9 +28,13 @@ class VerifyPasswordRule implements Rule
     public function passes($attribute, $value)
     {
         $user = User::where('email', $this->email)
-                ->first();
+            ->first();
 
-        if (!Hash::check($value, $user->password)) {
+        if (! $user) {
+            return;
+        }
+
+        if (! Hash::check($value, $user->password)) {
             return false;
         }
 
