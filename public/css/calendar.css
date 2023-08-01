@@ -1,0 +1,15 @@
+.ul-left-menu a.calendar {background: #f2f2f2; border-left: 3px solid #0b5ed7}
+.ul-left-menu a.calendar span, .ul-left-menu a.calendar svg {color: #0b5ed7}
+
+#table-reminders tr td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#table-reminders .fa-times {
+    color: red
+}
+
+#table-reminders .fa-edit {
+    color: #0b5ed7
+}

@@ -1,0 +1,130 @@
+.ul-left-menu a.topics {background: #f2f2f2; border-left: 3px solid #0b5ed7}
+.ul-left-menu a.topics span, .ul-left-menu a.topics svg {color: #0b5ed7}
+#btn-add-topic {
+    background: #0b5ed7;  
+    border-radius: 3px;   
+    color: white; 
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 12px;    
+    padding: 8px 12px
+}
+#btn-add-topic svg {margin-right: 4px;}
+.dv-topics {margin-top: 10px}
+.lbl-topic {
+  font-size: 12.5px;
+  font-weight: bold;
+ }
+.lnk-topic {
+  cursor: pointer; 
+  text-align: center; 
+  text-decoration: none
+}
+.lnk-topic div {display: flex; justify-content: center;}
+.lnk-topic span {width: 100%; display: inline-block;}
+.lnk-topic img {width: 50% !important; margin-bottom: 2px; display: inline-block;}
+#dv-inactive-topics {background: rgba(255,255, 255, 0.5)}
+#dv-drafts-topics {background: rgba(255,255, 255, 0.3);}
+.col-btns {
+  display: inline-flex;
+  justify-content: space-between;
+}
+#error-response {
+  color: red;
+  font-size: 12.5px;
+  font-weight: bold;;
+  visibility: hidden;
+}
+
+#dv-publish {
+  display: none
+}
+
+/* Slider */
+.slick-slide {
+    margin: 0px 20px;
+  }
+  
+  .logo-carousel {
+    overflow: inherit;
+    border-top: 1px solid #353535;
+    border-bottom: 1px solid #353535;
+  }
+  
+  .slick-slide img {
+    width: 100%;
+  }
+  
+  .slick-track::before,
+  .slick-track::after {
+    display: table;
+    content: '';
+  }
+  
+  .slick-track::after {
+    clear: both;
+  }
+  
+  .slick-track {
+    padding: 0.2rem 0;
+  }
+  
+  .slick-loading .slick-track {
+    visibility: hidden;
+  }
+  
+  .slick-slide.slick-loading img {
+    display: none;
+  }
+  
+  .slick-slide.dragging img {
+    pointer-events: none;
+  }
+  
+  .slick-loading .slick-slide {
+    visibility: hidden;
+  }
+  
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
+    color: #fff;
+    /*filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);*/
+    border: none;
+    width: 2rem;
+    height: 1.5rem;
+    text-indent: -10000px;
+    margin-top: -16px;
+    z-index: 99;
+  }
+  
+  .slick-arrow.slick-next {
+    background-size: 65%;
+    transform: rotate(180deg);
+    right: -16px;
+  }
+  
+  .slick-arrow.slick-prev {
+    background-size: 65%;
+    left: -10px;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+    .slick-arrow {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+    
+  .row {
+    overflow: hidden;
+  }  
+  
+  /* JsFiddle Example only/don't use */
+  .logo-carousel {
+    margin-top: 32px;
+  }

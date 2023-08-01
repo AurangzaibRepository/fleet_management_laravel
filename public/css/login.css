@@ -1,0 +1,26 @@
+html {height: 100%}
+body {height: 100%; margin: 0px}
+.dv-base {height: 100%;}
+.dv-top{ padding: 44px 44px 20px 44px}
+.dv-top label {color: blue; font-size: 25px}
+.dv-sign-in-header, .dv-sign-up-text {width: 100%; text-align: center;}
+.dv-sign-up-text {display: none}
+.dv-sign-in-header label {color: blue; display: inline-block; font-size: 25px; font-weight: bold; margin-bottom: 5px}
+.dv-sign-in-header span, .dv-sign-up-text {color: gray; font-size: 14px}
+.dv-sign-up-text label {color: blue}
+.dv-form {margin-top: 14px; width: 100%}
+form label {color: blue; font-size: 14px; margin-top: 11px}
+input.form-control {font-size: 14px}
+.dv-forgot-password {color: grey; display: none; font-size: 0.75em; justify-content: space-between; margin-top: 5px}
+.dv-forgot-password label {  align-items: center;; display: inline-flex; margin: 0px;}
+.dv-forgot-password label span {color: grey; font-size: 0.75em; margin-left: 3px}
+.dv-submit {margin: 25px 0px 14px 0px; text-align: center;}
+.dv-submit .btn-primary {font-size: 14px; padding: 3px; width: 35%}
+.dv-social-login {margin-bottom: 20px; text-align: center; display: none}
+.dv-social-login span {color: grey; font-size: 14px}
+.dv-social-icons {margin-top:4px}
+.dv-social-icons > div {display: inline-flex; justify-content: space-evenly; width: 35%}
+.dv-social-icons span {border-radius: 50%; padding: 12px 13px;}
+.dv-social-icons .spn-facebook {background: blue}
+.spn-google, .spn-twitter {background: grey}
+.alert {font-size: 13.5px; margin:10px 0px 0px; padding: 7px 12px}

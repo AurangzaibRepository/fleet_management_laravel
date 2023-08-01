@@ -1,0 +1,9 @@
+.ul-left-menu a.whatsapp-sessions {background: #f2f2f2; border-left: 3px solid #0b5ed7}
+.ul-left-menu a.whatsapp-sessions span, .ul-left-menu a.whatsapp-sessions svg {color: #0b5ed7}
+#table-whatsapp td svg {
+    color: #588558;
+    font-size: 16px
+}
+#table-whatsapp tr td:last-child{
+    text-align: center;
+}

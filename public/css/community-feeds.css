@@ -1,0 +1,25 @@
+.ul-left-menu a.community {background: #f2f2f2; border-left: 3px solid #0b5ed7}
+.ul-left-menu a.community span, .ul-left-meny a.community svg{color: #0b5ed7}
+
+#table-feeds tr td:last-child div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modal-body .select2-container{
+    width: 100% !important;
+}
+
+#table-feeds a {
+    cursor: pointer;
+}
+
+.pending {
+    color: #7aa3cc;
+}
+.approved {
+    color: #7fbf7f;
+}
+.rejected{
+    color: red; 
+}

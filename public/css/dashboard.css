@@ -1,0 +1,42 @@
+.ul-left-menu a.dashboard {background: #f2f2f2; border-left: 3px solid #0b5ed7; font-weight: 600;}
+.ul-left-menu a.dashboard span, .ul-left-menu a.dashboard svg {color: #0b5ed7}
+.dv-base {margin-top: 18px}
+#dv-activity {height: 269px}
+.dv-new-users {max-height: 400px; margin-top: 20px}
+.dv-box-header {color: #333333; font-size: 14px}
+.dv-user, .dv-whatsapp-sessions {margin-top: 17px}
+.user-card {display: flex; align-items: center;}
+.user-card img {margin-right: 13px; width: 15%; }
+.user-info, .join-info {line-height: 17.5px;}
+.user-info .username {color: #000; font-size: 13px; font-weight: bold;}
+.user-info .email {color: #0b5ed7; font-size: 13px;}
+.user-info .phone, .join-info span {color: #a6a6a6; font-size: 12px}
+.join-info span {display: inline-block;}
+.dv-user {display: flex; justify-content: space-between;}
+
+.dv-active-users {background-color: #fff; max-height:350px}
+.tbl-active-users, .tbl-whatsapp-sessions {margin-top: 17px; width: 100%}
+.tbl-active-users tr:first-child, .tbl-whatsapp-sessions tr:first-child {border-bottom: 1px solid #c0c0c0;}
+.tbl-active-users tr:not(:last-child), .tbl-whatsapp-sessions tr:not(:last-child) {border-bottom: 1px solid #c0c0c0; }
+.tbl-active-users th, .tbl-whatsapp-sessions th {color: #a6a6a6; font-size: 11px; padding: 8px 0px}
+.tbl-active-users tr th:first-child, .tbl-whatsapp-sessions tr th:first-child {padding-left: 20px; width: 60%}
+.tbl-active-users tr th:not(:first-child), .tbl-whatsapp-sessions tr th:not(:first-child) {width: 40%}
+.tbl-active-users tr td:nth-child(2), .tbl-whatsapp-sessions tr td:nth-child(2) {color: #a6a6a6; font-size: 12px;}
+.tbl-active-users tr td:first-child, .tbl-whatsapp-sessions tr td:first-child {padding-left: 20px;}
+.tbl-active-users td, .tbl-whatsapp-sessions td {padding: 12px 0px}
+.tbl-active-users td img, .tbl-whatsapp-sessions td img {width: 10%}
+.tbl-active-users .username, .tbl-whatsapp-sessions .username {font-size: 12px; margin-left: 5px;}
+.dv-view-all {
+    color: #0b5ed7;
+    justify-content: flex-end;
+}
+
+.dv-box {
+    background: #fff;
+    padding: 25px
+}
+
+.lnk-view-all {
+    text-decoration: none; 
+    width: auto;
+}

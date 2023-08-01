@@ -1,0 +1,141 @@
+html {height: 100%}
+body {height: 100%; margin: 0px}
+#lbl-page-header {color:#4c4c4c; font-weight: 600; margin-bottom: 12px }
+.base-container {height: inherit}
+.dv-top-menu{align-items: center; background: #0b5ed7; display: flex;height: 7%; padding: 8px 18px;}
+.dv-top-menu .app-title{color: white; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;}
+.base-contents {display: flex; min-height: 93%}
+.dv-left-menu {box-shadow: 10px -2px 10px -13px rgba(0,0,0,0.75); width: 19%; z-index: 1 }
+.ul-left-menu {list-style: none; margin: 0px; padding: 30px 7px 0px}
+.ul-left-menu a {display: block; padding: 6px 8px 6px 12px; font-size: 23px; text-transform: uppercase; text-decoration: none;}
+.ul-left-menu a:hover {background: #f2f2f2; font-weight: 600;}
+.ul-left-menu span{color: #848484; font-size: 14px; margin-left: 8px;}
+.ul-left-menu a svg {color: #848484; font-size: 13px}
+.ul-left-menu .fa-file-alt {margin-left: 3px;font-size: 14px;margin-right: 2px;}
+.ul-left-menu .fa-cog, .ul-left-menu .fa-fan {margin-left: 1px;font-size: 14px;margin-right: 5px;}
+.ul-left-menu a:hover span, .ul-left-menu a:hover svg {color: #0b5ed7}
+.dv-contents {background: #f2f2f2; padding: 30px 20px; width: 81%}
+.dv-base {margin-top: 12px}
+table {margin: 0px !important}
+table.dataTable {width: 100% !important}
+.page-item.active .page-link {background: #0b53d7}
+.paginate_button .page-link {padding: 0.2rem 0.75rem}
+.page-layout {padding: 15px 20px; background-color: white;}
+
+table thead tr{background: #0b5ed7; color: white}
+table th, table td {
+    font-size: 14px; 
+    font-weight: normal;
+}
+.dataTables_info {
+    font-size: 13px;
+    padding-top: 4px
+}
+.pagination {margin: 0px}
+.pagination .paginate_button {
+    font-size: 13px
+}
+
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+    border-radius: 0px !important;
+}
+
+.modal {top: 3%}
+
+.modal-header {
+    background-color: #0b5ed7;
+    padding: 0.8rem 1rem
+}
+.modal-header .btn-close {
+    font-size: 12px;
+    position: absolute;
+    right: 19px;
+    display: none
+}
+.modal-header label{
+    color: white;
+    font-weight: 600;
+}
+.modal-body label{
+    font-size: 13.7px
+}
+.modal-body textarea{
+    height: 145px;
+    resize: none
+}
+.modal-body .col-12{
+    margin-bottom: 10px
+}
+.modal-body .dv-checkbox{
+    align-items: center;
+    display: inline-flex
+}
+.modal-body .dv-checkbox label{
+    font-size: 13px;
+    margin-left: 6px;
+}
+.alert{
+    font-size: 13.6px !important;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 8px;
+    padding: 6px 14px !important;
+}
+
+.btn {
+    font-size: 13px;
+    min-width: 64px;
+    padding: 2px 11px;
+}
+
+/*.btn-primary{
+    background-color: #7fbf7f;
+    border-color: #7fbf7f;
+}*/
+
+.btn-secondary {
+    background-color: #a6a6a6;
+    border-color: #a6a6a6;
+    margin-left: 4px;
+}
+
+.form-control, .select2-container .select2-selection--single, .select2-results__option {
+    font-size: 14px;
+}
+
+.form-control, .form-select {
+    padding: 6px 11px
+}
+
+.spn-error {
+    color: red;
+    display: none;
+    font-size: 12.5px;
+}
+
+.icon-primary {
+    color: #7fbf7f
+}
+.icon-secondary {
+    color: red
+}
+
+form label, .modal label {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+form .form-control {
+    font-size: 13px;
+}
+
+form .btn-secondary {
+    margin-left: 8px
+}
+
+.dv-filter {
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 1px lightgray;
+    margin: 5px 0px 15px 0px;
+    padding: 20px 16px 2px 16px;
+}
