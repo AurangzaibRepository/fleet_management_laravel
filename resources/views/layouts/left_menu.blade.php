@@ -5,22 +5,22 @@
         </a>
     </li>
     <li>
-        <a href="{{route('vendors')}}" class="users">
+        <a href="{{route('vendors')}}" class="vendors">
             <i class="fa fa-users"></i> <span>Vendors</span>
         </a>
     </li>
     <li>
-        <a href="#" class="whatsapp-sessions">
+        <a href="#" class="vehicles">
             <i class="far fa-file-alt"></i> <span>Vehicles</span>
         </a>
     </li>
     <li>
-        <a href="#" class="community">
+        <a href="#" class="fuel">
             <i class="fas fa-cog"></i><span>Fuel History</span>
         </a>
     </li>
     <li>
-        <a href="#" class="topics">
+        <a href="#" class="issues">
             <i class="fas fa-fan"></i><span>Issues</span>
         </a>
     </li>
