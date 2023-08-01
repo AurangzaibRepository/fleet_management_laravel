@@ -3,7 +3,7 @@ body {height: 100%; margin: 0px}
 #lbl-page-header {
     background: #fff;
     border-radius: 5px;
-    color: #000;
+    color: #0b5ed7;
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -135,7 +135,7 @@ table th, table td {
 
 form label, .modal label {
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 form .form-control {
