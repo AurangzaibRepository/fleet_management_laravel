@@ -22,5 +22,6 @@ class VendorsController extends Controller
 
     public function listing(): JsonResponse
     {
+        return $this->vendor->getListing();
     }
 }
