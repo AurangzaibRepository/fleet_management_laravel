@@ -26,7 +26,7 @@
     </li>
     <li>
         <a href="{{route('logout')}}">
-            <i class="fas fa-sign-out"></i><span>Logout</span>
+            <i class="fas fa-sign-out-alt"></i><span>Logout</span>
         </a>
     </li>
 </ul>
