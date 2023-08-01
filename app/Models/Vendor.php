@@ -15,4 +15,9 @@ class Vendor extends Model
         private VendorProvider $provider,
     ) {
     }
+
+    public function getListing(): JsonResponse
+    {
+        $data = $this->provider->fetchList();
+    }
 }
