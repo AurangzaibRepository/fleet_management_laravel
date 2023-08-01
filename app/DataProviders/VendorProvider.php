@@ -10,6 +10,8 @@ class VendorProvider extends BaseProvider
     {
         $response = $this->getRequest(config('app.vendor_list_url'));
 
-        echo '<pre>'; print_r($response); exit;
+        echo '<pre>';
+        print_r($response);
+        exit;
     }
 }

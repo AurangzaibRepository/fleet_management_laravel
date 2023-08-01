@@ -2,12 +2,11 @@
 
 namespace App\DataProviders;
 
-use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
 
 class BaseProvider
 {
-    protected function getRequest(string $url): Response
+    protected function getRequest(string $url): array
     {
         $url = config('app.fleetio_base_url').$url;
 
@@ -17,6 +16,8 @@ class BaseProvider
             'Account-Token' => config('app.fleetio_account_token'),
         ])->get($url);
 
-        return $response;
+        $response = $response->body();
+
+        return json_decode($response);
     }
 }
