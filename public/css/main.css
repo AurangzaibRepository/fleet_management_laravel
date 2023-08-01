@@ -33,6 +33,9 @@ table.dataTable {width: 100% !important}
 .page-layout {padding: 15px 20px; background-color: white;}
 
 table thead tr{background: #0b5ed7; color: white}
+table th {
+    font-weight: 600 !important;
+}
 table th, table td {
     font-size: 14px; 
     font-weight: normal;
