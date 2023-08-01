@@ -25,7 +25,7 @@ Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::group(['middleware' => 'auth'], function () {
     // Vendors
-    Route:prefix('vendors')->group(function () {
+    Route::prefix('vendors')->group(function () {
         Route::get('/', [VendorsController::class, 'index'])->name('vendors');
     });
 
