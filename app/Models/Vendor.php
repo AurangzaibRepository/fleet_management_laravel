@@ -6,6 +6,7 @@ use App\DataProviders\VendorProvider;
 use App\Transformers\VendorTransformer;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\JsonResponse;
 
 class Vendor extends Model
 {
