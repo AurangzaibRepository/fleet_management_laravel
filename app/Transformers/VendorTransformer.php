@@ -19,6 +19,7 @@ class VendorTransformer
                 $address,
                 $row->phone,
                 $row->website,
+                $row->id,
             ];
         }
 
