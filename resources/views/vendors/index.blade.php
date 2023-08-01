@@ -21,3 +21,7 @@
     </div>
 </div>
 @endSection
+
+@push('scripts')
+<script src="{{asset('/js/vendors/listing.js')}}" />
+@endPush
