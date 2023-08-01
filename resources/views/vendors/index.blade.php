@@ -1,4 +1,7 @@
 @extends('/layouts/main')
+@push('styles')
+<link rel="stylesheet" href="{{asset('/css/vendors/listing.css')}}"></link>
+@endPush
 
 @section('contents')
 {{Form::label('lbl-page-header', 'Vendors', ['id' => 'lbl-page-header'])}}
