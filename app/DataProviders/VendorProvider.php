@@ -13,7 +13,7 @@ class VendorProvider extends BaseProvider
 
     public function fetchDetails(int $id): array
     {
-        $response = $this->getRequest(config('app.vendor_detail_url'));
+        $response = $this->getRequest(config('app.vendor_details_url'));
 
         return $response;
     }
