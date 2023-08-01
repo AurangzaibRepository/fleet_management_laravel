@@ -15,6 +15,7 @@
                     <th>Address</th>
                     <th>Contact Number</th>
                     <th>Website</th>
+                    <th></th>
                 </tr>
             </thead>
         </table>
