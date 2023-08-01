@@ -7,6 +7,7 @@ function populateVendors() {
         bLengthChange: false,
         bSort: false,
         searching: false,
+        ajax: '/vendors/listing',
         columnDefs: [
             {'targets': 0, 'width': '6%', className: 'text-center'},
             {'targets': 2, 'width': '30%'},
