@@ -24,4 +24,11 @@ class VendorsController extends Controller
     {
         return $this->vendor->getListing();
     }
+
+    public function details(int $id): view
+    {
+        return view('vendors.details', [
+            'data' => $this->vendor->getDetails($id),
+        ]);
+    }
 }
