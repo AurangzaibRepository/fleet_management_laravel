@@ -231,38 +231,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
     ],
 
-    'user_status' => [
-        '' => '-- Status --',
-        'Active' => 'Active',
-        'Inactive' => 'Inactive',
-        'Current' => 'Current'
-    ],
-
-    'topic_types' =>[
-        '' => '-- Select --',
-        'video' => 'Video',
-        'article' => 'Article'
-    ],
-
-    'repeat_values' => [
-        'Daily' => 'Daily',
-        'Weekly' => 'Weekly',
-        'Monthly' => 'Monthly'
-    ],
-
-    'reminder_priorities' => [
-        'más o menos' => 'más o menos',
-        'no importante' => 'no importante',
-        'urgente' => 'urgente'
-    ],
-
-    'reminder_values' => [
-        'Anillo vaginal' => 'Anillo vaginal',
-        'DIU' => 'DIU',
-        'Implante' => 'Implante',
-        'Inyección' => 'Inyección',
-        'Métodos naturales' => 'Métodos naturales',
-        'Parche' => 'Parche',
-        'Píldora anticonceptiva' => 'Píldora anticonceptiva'
-    ]
+    'fleetio_base_url' => env('FLEETIO_BASE_URL'),
+    'vendor_list_url' => env('VENDOR_LIST_URL'),
 ];
