@@ -7,7 +7,6 @@
 
 @section('contents')
 {{Form::label('lbl-page-header', 'Analytics', ['id' => 'lbl-page-header'])}}
-
 <div class="row dv-base">
 </div>
 @endSection
