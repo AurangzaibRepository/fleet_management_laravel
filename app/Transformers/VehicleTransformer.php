@@ -52,15 +52,17 @@ class VehicleTransformer
         ];
 
         $response['dimensions'] = [
-            'height' => $data['height'],
-            'length' => $data['length'],
-            'width' => $data['width'],
+            'height' => $data['specs']->height,
+            'length' => $data['specs']->length,
+            'width' => $data['specs']->width,
         ];
 
         $response['engine'] = [
-            'brand' => $data['engine_brand'],
-            'description' => $data['engine_description'],
-            'aspiration' => $data['engine_aspiration'],
+            'brand' => $data['specs']->engine_brand,
+            'description' => $data['specs']->engine_description,
+            'aspiration' => $data['specs']->engine_aspiration,
         ];
+
+        return $response;
     }
 }
