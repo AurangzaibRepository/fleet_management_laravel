@@ -34,6 +34,8 @@ class VehicleTransformer
         $response = [
             'id' => $data['id'],
             'image' => $data['default_image_url_medium'],
+            'status' => $data['vehicle_status_name'],
+            'status_color' => $data['vehicle_status_color'],
         ];
 
         $response['details'] = [
