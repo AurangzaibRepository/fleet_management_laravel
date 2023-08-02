@@ -7,5 +7,6 @@ function populateVehicles() {
         'searching': false,
         'bLengthChange': false,
         'bSort': false,
+        'ajax': '/vehicles/listing',
     });
 }
