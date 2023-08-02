@@ -162,6 +162,12 @@ form .btn-secondary {
     padding: 20px 16px 2px 16px;
 }
 
+.lbl-subtitle {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 /* Tab style */
  .tab {
     overflow: hidden;
