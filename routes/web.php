@@ -35,6 +35,7 @@ Route::group(['middleware' => 'auth'], function () {
     // Vehicles
     Route::prefix('vehicles')->group(function () {
         Route::get('/', [VehiclesController::class, 'index'])->name('vehicles');
+        Route::get('listing', [VehiclesController::class, 'listing']);
     });
 
     // Dashboard
