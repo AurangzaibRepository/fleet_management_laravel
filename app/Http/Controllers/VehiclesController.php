@@ -24,4 +24,12 @@ class VehiclesController extends Controller
     {
         return $this->vehicle->getListing();
     }
+
+    public function details(int $id): view
+    {
+        return view('vehicles.details', [
+            'pageTitle' => config('app.name').' - Vehicles',
+            'data' => $this->vehicle->getDetails($id),
+        ]);
+    }
 }
