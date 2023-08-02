@@ -31,7 +31,8 @@ class Vehicle extends Model
     public function getDetails(int $id): object
     {
         $data = $this->provider->fetchDetails($id);
+        $transformedData = $this->transformer->transformDetails($data);
 
-        return $data;
+        return $transformedData;
     }
 }
