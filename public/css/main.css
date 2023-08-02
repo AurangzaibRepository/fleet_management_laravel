@@ -161,3 +161,41 @@ form .btn-secondary {
     margin: 5px 0px 15px 0px;
     padding: 20px 16px 2px 16px;
 }
+
+/* Tab style */
+ .tab {
+    overflow: hidden;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    border: none;
+    border-right: 1px solid gray !important;
+    color: gray;
+    float: left;
+    font-size: 17px;
+    outline: none;
+    cursor: pointer;
+    padding: 2px 14px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    border-bottom: 2px solid #0b5ed7;
+    color: #0b5ed7;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  } 
