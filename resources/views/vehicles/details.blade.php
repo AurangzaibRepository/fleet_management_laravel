@@ -5,4 +5,7 @@
 
 @section('contents')
 {{Form::label('lbl-page-header', 'Vehicle Details', ['id' => 'lbl-page-header'])}}
+<div class="dv-base">
+    @include('vehicles.details-form')
+</div>
 @endSection
