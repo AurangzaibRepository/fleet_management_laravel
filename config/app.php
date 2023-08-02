@@ -236,4 +236,5 @@ return [
     'fleetio_base_url' => env('FLEETIO_BASE_URL'),
     'vendor_list_url' => env('VENDOR_LIST_URL'),
     'vendor_details_url' => env('VENDOR_DETAILS_URL'),
+    'vehicle_list_url' => env('VEHICLE_LIST_URL'),
 ];
