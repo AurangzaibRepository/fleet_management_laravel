@@ -12,7 +12,7 @@
         </div>
     </div>
     
-    <div class="tab">
+    <div class="tab mt-4">
         <button class="tablinks">Overview</button>
         <button class="tablinks">specs</button>
     </div>
