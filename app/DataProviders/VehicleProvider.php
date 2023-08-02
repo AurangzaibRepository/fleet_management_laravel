@@ -10,4 +10,12 @@ class VehicleProvider extends BaseProvider
 
         return $response;
     }
+
+    public function fetchDetails(int $id): object
+    {
+        $url = config('app.vehicle_list_url')."/{$id}";
+        $data = $this->getRequest($url);
+
+        return $data;
+    }
 }
