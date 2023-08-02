@@ -14,7 +14,7 @@
     
     <div class="tab mt-4">
         <button class="tablinks">Overview</button>
-        <button class="tablinks">specs</button>
+        <button class="tablinks">Specs</button>
     </div>
     @include('vehicles.overview')
     @include('vehicles.specs')
