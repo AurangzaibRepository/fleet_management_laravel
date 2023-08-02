@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\DataProviders\VehicleProvider;
+use App\Transformers\VehicleTransformer;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
