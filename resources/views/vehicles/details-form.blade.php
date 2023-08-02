@@ -11,4 +11,11 @@
             <span><i class="fa fa-circle me-1" color="{{$data->vehicle_status_color}}"></i>{{$data->vehicle_status_name}}</span>
         </div>
     </div>
+    
+    <div class="tab">
+        <button class="tablinks">Overview</button>
+        <button class="tablinks">specs</button>
+    </div>
+    @include('vehicles.overview')
+    @include('vehicles.specs')
 </div>
