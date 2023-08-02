@@ -7,6 +7,8 @@
             {{Form::label('name', $data->name, ['id' => 'lbl-name'])}}
             <br/>
             <span id="span-specs">{{$data->vehicle_type_name}} - {{$data->year}} {{$data->make}} {{$data->vin}}</span>
+            <br/>
+            <span><i class="fa fa-circle me-1" color="{{$data->vehicle_status_color}}"></i>{{$data->vehicle_status_name}}</span>
         </div>
     </div>
 </div>
