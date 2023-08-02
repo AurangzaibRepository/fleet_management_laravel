@@ -1,0 +1,9 @@
+#img-car {
+    border-radius: 5px;
+}
+
+#lbl-name {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
