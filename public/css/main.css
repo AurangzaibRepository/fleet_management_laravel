@@ -168,6 +168,10 @@ form .btn-secondary {
     font-weight: 600;
 }
 
+.lbl-key {
+    color: gray;
+}
+
 /* Tab style */
  .tab {
     overflow: hidden;
