@@ -3,7 +3,7 @@
 use Illuminate\Support\Str;
 
 if (! function_exists('formatKeyLabel')) {
-    function formatLabelKey(string $label): string
+    function formatKeyLabel(string $label): string
     {
         $label = Str::replace('_', ' ', $label);
 
