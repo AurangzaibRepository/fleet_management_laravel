@@ -10,7 +10,7 @@
         </a>
     </li>
     <li>
-        <a href="#" class="vehicles">
+        <a href="{{route('vehicles')}}" class="vehicles">
             <i class="far fa-file-alt"></i> <span>Vehicles</span>
         </a>
     </li>
