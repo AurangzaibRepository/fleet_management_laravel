@@ -25,5 +25,5 @@
 @endSection
 
 @push('scripts')
-<script src="{{asset('/js/vendors/listing.js')}}"></script>
+<script src="{{asset('/js/vehicles/listing.js')}}"></script>
 @endPush
