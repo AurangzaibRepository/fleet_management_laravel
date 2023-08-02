@@ -13,8 +13,8 @@
     </div>
     
     <div class="tab mt-4">
-        <button class="tablinks">Overview</button>
-        <button class="tablinks">Specs</button>
+        <button class="tablinks" onclick="openTab(event, 'tab-overview')">Overview</button>
+        <button class="tablinks" onclick="openTab(event, 'tab-specs')">Specs</button>
     </div>
     @include('vehicles.overview')
     @include('vehicles.specs')
