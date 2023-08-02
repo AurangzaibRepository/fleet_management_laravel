@@ -1,14 +1,14 @@
 <div class="page-layout">
     <div class="d-flex">
         <div class="me-3">
-            <img src="{{$data->default_image_url_medium}}" id="img-car" />
+            <img src="{{$data['image']}}" id="img-car" />
         </div>
         <div>
-            {{Form::label('name', $data->name, ['id' => 'lbl-name'])}}
+            {{Form::label('name', $data['details']['name'], ['id' => 'lbl-name'])}}
             <br/>
-            <span id="span-specs">{{$data->vehicle_type_name}} - {{$data->year}} {{$data->make}} {{$data->vin}}</span>
+            <span id="span-specs">{{$data['details']['type']}} - {{$data['details']['year']}} {{$data['details']['make']}} {{$data['details']['vin']}}</span>
             <br/>
-            <span><i class="fa fa-circle me-1" color="{{$data->vehicle_status_color}}"></i>{{$data->vehicle_status_name}}</span>
+            <span><i class="fa fa-circle me-1" color="{{$data['status_color']}}"></i>{{$data['status']}}</span>
         </div>
     </div>
     
