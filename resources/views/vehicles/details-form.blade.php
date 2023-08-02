@@ -5,6 +5,8 @@
         </div>
         <div>
             {{Form::label('name', $data->name, ['id' => 'lbl-name'])}}
+            <br/>
+            <span id="span-specs">{{$data->vehicle_type_name}} - {{$data->year}} {{$data->make}} {{$data->vin}}</span>
         </div>
     </div>
 </div>
