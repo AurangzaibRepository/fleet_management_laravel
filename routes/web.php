@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\VehiclesController;
 use App\Http\Controllers\VendorsController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,11 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/', [VendorsController::class, 'index'])->name('vendors');
         Route::get('/listing', [VendorsController::class, 'listing']);
         Route::get('/{id}', [VendorsController::class, 'details']);
+    });
+
+    // Vehicles
+    Route::prefix('vehicles')->group(function () {
+        Route::get('/', [VehiclesController::class, 'index'])->name('vehicles');
     });
 
     // Dashboard
