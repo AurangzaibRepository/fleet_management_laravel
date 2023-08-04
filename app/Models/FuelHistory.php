@@ -6,6 +6,7 @@ use App\DataProviders\FuelHistoryProvider;
 use App\Transformers\FuelHistoryTransformer;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\JsonResponse;
 
 class FuelHistory extends Model
 {
@@ -17,5 +18,13 @@ class FuelHistory extends Model
         private FuelHistoryProvider $provider,
         private FuelHistoryTransformer $transformer,
     ) {
+    }
+
+    public function getListing(): JsonResponse
+    {
+        $data = $this->provider->fetchList();
+        $transformedData = $this->transformer->transformList($data);
+
+        return response()->json($transformedData);
     }
 }
