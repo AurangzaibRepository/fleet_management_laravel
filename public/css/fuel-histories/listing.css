@@ -17,3 +17,13 @@
 #dv-statistics .row .col-md-3:not(:last-child) {
     border-right: 1px solid lightgray;
 }
+
+#dv-statistics span {
+    font-size: 14px;
+}
+
+#dv-statistics label {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+}
