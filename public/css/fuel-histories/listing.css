@@ -20,9 +20,11 @@
 
 #dv-statistics span {
     font-size: 14px;
+    font-weight: 600;
 }
 
 #dv-statistics label {
+    color: #0b5ed7;
     display: block;
     font-size: 17px;
     font-weight: 600;
