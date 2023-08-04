@@ -28,7 +28,7 @@ class VendorsController extends Controller
     public function details(int $id): view
     {
         return view('vendors.details', [
-            'pageTitle' => config('app.name').' - Vendors',
+            'pageTitle' => config('app.name').' - Vendor Details',
             'data' => $this->vendor->getDetails($id),
         ]);
     }
