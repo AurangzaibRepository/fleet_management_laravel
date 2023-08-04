@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Model\FuelHistory;
+use App\Models\FuelHistory;
 use Illuminate\View\View;
 
 class FuelHistoriesController extends Controller
