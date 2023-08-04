@@ -3,12 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Model\FuelHistory;
-use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class FuelHistoriesController extends Controller
 {
     public function __construct(
         private FuelHistory $fuelHistory,
     ) {
+    }
+
+    public function index(): view
+    {
+        return view('fuel-history.index', [
+            'pageTitle' => config('app.name').' - Fuel History',
+        ]);
     }
 }
