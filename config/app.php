@@ -231,6 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
     ],
 
+    'transaction_currency' => env('TRANSACTION_CURRENCY'),
     'fleetio_api_key' => env('FLEETIO_API_KEY'),
     'fleetio_account_token' => env('FLEETIO_ACCOUNT_TOKEN'),
     'fleetio_base_url' => env('FLEETIO_BASE_URL'),
