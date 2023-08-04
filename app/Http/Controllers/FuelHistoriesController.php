@@ -21,5 +21,7 @@ class FuelHistoriesController extends Controller
     }
 
     public function listing(): JsonResponse
-    {}
+    {
+        return $this->fuelHistory->getListing();
+    }
 }
