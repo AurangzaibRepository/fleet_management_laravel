@@ -8,6 +8,12 @@ function populateFuelHistory() {
         'bSort': false,
         'searching': false,
         'ajax': '/fuel-history/listing',
+        'initComplete': function(settings, json) {
+            $('#span-total-fuel').text(json.totalFuelCost);
+            $('#span-total-volume').text(json.totalVolume);
+            $('#span-avg-fuel').text(json.avgFuelEconomy);
+            $('#span-avg-cost').text(json.avgCost);
+        },
         'columnDefs': [
             {'targets': 0, 'width': '6%', 'className': 'text-center'},
             {'targets': 1, 'width': '30%'},
