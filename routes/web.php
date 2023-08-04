@@ -44,6 +44,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::prefix('fuel-history')->group(function () {
         Route::get('/', [FuelHistoriesController::class, 'index'])->name('fuelHistories');
         Route::get('listing', [FuelHistoriesController::class, 'listing']);
+        Route::get('/{id}', [FuelHistoriesController::class, 'details']);
     });
 
     // Dashboard
