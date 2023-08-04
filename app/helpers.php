@@ -21,3 +21,12 @@ if (! function_exists('formatDate')) {
         return $date;
     }
 }
+
+if (! function_exists('formatNumber')) {
+    function formatNumber(float $value, string $currency = null): string
+    {
+        $value = number_format($value, 2, '.', ',');
+
+        return "{$currency} {$value}";
+    }
+}
