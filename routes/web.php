@@ -43,6 +43,7 @@ Route::group(['middleware' => 'auth'], function () {
     // Fuel history
     Route::prefix('fuel-history')->group(function () {
         Route::get('/', [FuelHistoriesController::class, 'index'])->name('fuelHistories');
+        Route::get('listing', [FuelHistoriesController::class, 'listing']);
     });
 
     // Dashboard
