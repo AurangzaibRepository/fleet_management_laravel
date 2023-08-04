@@ -8,6 +8,7 @@
 
 <div class="dv-base">
     <div class="page-layout">
+        @include('fuel-history.statistics')
         <table id="table-fuel-history" class="table table-striped table-bordered">
             <thead>
                 <tr>
