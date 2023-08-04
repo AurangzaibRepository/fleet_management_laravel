@@ -14,7 +14,7 @@ class FuelHistoryTransformer
             $response['data'][] = [
                 (++$index),
                 $row->vehicle_name,
-                $row->date,
+                formatDate($row->date),
                 $row->meter_entry->value,
                 config('app.transaction_currency')." {$row->total_amount}",
                 $row->id,
