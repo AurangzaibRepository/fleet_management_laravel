@@ -16,7 +16,7 @@ class FuelHistoryTransformer
                 $row->vehicle_name,
                 formatDate($row->date),
                 $row->meter_entry->value,
-                "{$currency} {$row->total_amount}",
+                formatNumber($row->total_amount, $currency),
                 $row->id,
             ];
         }
@@ -30,10 +30,10 @@ class FuelHistoryTransformer
         $totalFuelCost = array_sum(array_column($data, 'total_amount'));
         $totalFuelEconomy = array_sum(array_column($data, 'fuel_economy_for_current_user'));
 
-        $response['totalFuelCost'] = "{$currency} {$totalFuelCost}";
-        $response['totalVolume'] = array_sum(array_column($data, 'us_gallons'));
-        $response['avgFuelEconomy'] = $totalFuelEconomy / $dataSize;
-        $response['avgCost'] = "{$currency} ".($totalFuelCost / $dataSize);
+        $response['totalFuelCost'] = formatNumber($totalFuelCost, $currency);
+        $response['totalVolume'] = formatNumber(array_sum(array_column($data, 'us_gallons')));
+        $response['avgFuelEconomy'] = formatNumber($totalFuelEconomy / $dataSize);
+        $response['avgCost'] = formatNumber(($totalFuelCost / $dataSize), $currency);
 
         return $response;
 
