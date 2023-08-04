@@ -15,7 +15,7 @@
         </a>
     </li>
     <li>
-        <a href="#" class="fuel">
+        <a href="{{route('fuelHistories')}}" class="fuel">
             <i class="fas fa-cog"></i><span>Fuel History</span>
         </a>
     </li>
