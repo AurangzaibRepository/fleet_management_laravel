@@ -9,10 +9,10 @@ function populateFuelHistory() {
         'searching': false,
         'ajax': '/fuel-history/listing',
         'initComplete': function(settings, json) {
-            $('#label-total-fuel').val(json.totalFuelCost);
-            $('#label-total-volume').val(json.totalVolume);
-            $('#label-avg-fuel').val(json.avgFuelEconomy);
-            $('#label-avg-cost').val(json.avgCost);
+            $('#label-total-fuel').text(json.totalFuelCost);
+            $('#label-total-volume').text(json.totalVolume);
+            $('#label-avg-fuel').text(json.avgFuelEconomy);
+            $('#label-avg-cost').text(json.avgCost);
         },
         'columnDefs': [
             {'targets': 0, 'width': '6%', 'className': 'text-center'},
