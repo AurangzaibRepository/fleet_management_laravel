@@ -1,0 +1,5 @@
+.ul-left-menu a.fuel {background: #f2f2f2; border-left: 3px solid #0b5ed7; font-weight: 600;}
+.ul-left-menu a.fuel span,
+.ul-left-menu a.fuel svg {
+    color: #0b5ed7
+}
