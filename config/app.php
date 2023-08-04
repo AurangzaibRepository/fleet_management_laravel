@@ -237,4 +237,5 @@ return [
     'vendor_list_url' => env('VENDOR_LIST_URL'),
     'vendor_details_url' => env('VENDOR_DETAILS_URL'),
     'vehicle_list_url' => env('VEHICLE_LIST_URL'),
+    'fuel_list_url' => env('FUEL_LIST_URL'),
 ];
