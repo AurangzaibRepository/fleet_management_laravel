@@ -16,6 +16,6 @@ class VehicleProvider extends BaseProvider
         $url = config('app.vehicle_list_url')."/{$id}";
         $data = $this->getRequest($url);
 
-        return (array)$data;
+        return (array) $data;
     }
 }
