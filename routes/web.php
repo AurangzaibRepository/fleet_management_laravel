@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\FuelHistoriesContoller;
+use App\Http\Controllers\FuelHistoriesController;
 use App\Http\Controllers\VehiclesController;
 use App\Http\Controllers\VendorsController;
 use Illuminate\Support\Facades\Route;
@@ -42,7 +42,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     // Fuel history
     Route::prefix('fuel-history')->group(function () {
-        Route::get('/', [FuelHistoriesContoller::class, 'index'])->name('fuelHistories');
+        Route::get('/', [FuelHistoriesController::class, 'index'])->name('fuelHistories');
     });
 
     // Dashboard
