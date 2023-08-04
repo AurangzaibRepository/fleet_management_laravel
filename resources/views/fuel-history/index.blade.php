@@ -23,3 +23,7 @@
     </div>
 </div>
 @endSection
+
+@push('scripts')
+<script type="text/javascript" src="{{asset('/js/fuel-histories/listing.js')}}"></script>
+@endPush
