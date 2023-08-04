@@ -12,4 +12,10 @@ class FuelHistory extends Model
     use HasFactory;
 
     protected $table = null;
+
+    public function __construct(
+        private FuelHistoryProvider $provider,
+        private FuelHistoryTransformer $transformer,
+    ) {
+    }
 }
