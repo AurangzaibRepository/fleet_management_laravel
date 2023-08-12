@@ -31,6 +31,11 @@ table.dataTable {width: 100% !important}
 .page-item.active .page-link {background: #0b53d7}
 .paginate_button .page-link {padding: 0.2rem 0.75rem}
 .page-layout {padding: 15px 20px; background-color: white;}
+#module-header {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
 
 table thead tr{background: #0b5ed7; color: white}
 table tr td a {
