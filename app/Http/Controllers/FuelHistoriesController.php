@@ -28,7 +28,7 @@ class FuelHistoriesController extends Controller
     public function details(int $id): view
     {
         return view('fuel-history.details', [
-            'pageTitle' => config('app.name').' - Fuel Entry',
+            'pageTitle' => config('app.name').' - Fuel Details',
             'data' => $this->fuelHistory->getDetails($id),
         ]);
     }
