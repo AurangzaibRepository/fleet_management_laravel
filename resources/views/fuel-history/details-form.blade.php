@@ -5,10 +5,10 @@
 <div class="mt-4">
     <div class="row">
         <div class="col-md-6">
-
+            @include('fuel-history.overview')
         </div>
         <div class="col-md-6">
-
+            @include('fuel-history.specs')
         </div>
     </div>
 </div>
