@@ -38,4 +38,15 @@ class FuelHistoryTransformer
         return $response;
 
     }
+
+    public function transformDetails(array $data): array
+    {
+        $response['details'] = [
+            'id' => $data['id'],
+            'vehicle' => $data['vehicle_name'],
+            'vendor' => $data['vendor_name'],
+            'fuel_type' => $data['fuel_type_name'],
+            'odometer' => $data['meter_entry']->value,
+        ];
+    }
 }
