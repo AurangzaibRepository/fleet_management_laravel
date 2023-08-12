@@ -27,4 +27,12 @@ class FuelHistory extends Model
 
         return response()->json($transformedData);
     }
+
+    public function getDetails(int $id): array
+    {
+        $data = $this->provider->fetchDetails($id);
+        $transformedData = $this->transformer->transformDetails($data);
+
+        return $transformedData;
+    }
 }
