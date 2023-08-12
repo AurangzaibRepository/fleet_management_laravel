@@ -10,4 +10,12 @@ class FuelHistoryProvider extends BaseProvider
 
         return $response;
     }
+
+    public function fetchDetails(int $id): array
+    {
+        $url = config('app.fuel_list_url')."/{$id}";
+        $response = $this->getRequest($url);
+
+        return (array) $response;
+    }
 }
