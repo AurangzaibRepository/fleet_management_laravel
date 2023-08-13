@@ -28,6 +28,9 @@ class AddColumnsToVendors extends Migration
     public function down(): void
     {
         Schema::table('vendors', function (Blueprint $table) {
+            $table->dropColumn('contact_name');
+            $table->dropColumn('latitude');
+            $table->dropColumn('longitude');
         });
     }
 }
