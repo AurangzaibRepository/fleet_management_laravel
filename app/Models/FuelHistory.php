@@ -33,6 +33,6 @@ class FuelHistory extends Model
         $data = $this->provider->fetchDetails($id);
         $transformedData = $this->transformer->transformDetails($data);
 
-        return $data;
+        return $transformedData;
     }
 }
