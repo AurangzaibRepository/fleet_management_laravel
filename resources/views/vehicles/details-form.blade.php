@@ -3,12 +3,15 @@
         <div class="me-3">
             <img src="{{$data['image']}}" id="img-car" />
         </div>
-        <div>
+        <div class="width-50">
             {{Form::label('name', $data['details']['name'], ['id' => 'lbl-name'])}}
             <br/>
             <span id="span-specs">{{$data['details']['type']}} - {{$data['details']['year']}} {{$data['details']['make']}} {{$data['details']['vin']}}</span>
             <br/>
             <span><i class="fa fa-circle me-1" color="{{$data['status_color']}}"></i>{{$data['status']}}</span>
+        </div>
+        <div class="width-50">
+            <a href="{{route('vehicles')}}" class="btn-primary float-end">Back</a>
         </div>
     </div>
     
