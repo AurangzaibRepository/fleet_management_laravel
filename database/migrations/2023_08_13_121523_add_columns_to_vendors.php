@@ -14,6 +14,9 @@ class AddColumnsToVendors extends Migration
     public function up(): void
     {
         Schema::table('vendors', function (Blueprint $table) {
+            $table->string('contact_name', 100);
+            $table->string('latitude');
+            $table->string('longitude');
         });
     }
 
