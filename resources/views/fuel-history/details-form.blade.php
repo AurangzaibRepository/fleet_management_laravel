@@ -1,6 +1,6 @@
 <div class="page-layout d-flex justify-content-between">
     {{Form::label('name', 'Fuel Entry #'.$data['details']['id'], ['id' => 'module-header'])}}
-    {{Form::button('Back', ['class' => 'btn-primary'])}}
+    <a href="{{route('fuelHistories')}}" class="btn-primary">Back</a>
 </div>
 
 <div class="mt-4">
