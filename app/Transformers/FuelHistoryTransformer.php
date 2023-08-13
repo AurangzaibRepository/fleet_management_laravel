@@ -47,6 +47,18 @@ class FuelHistoryTransformer
             'vendor' => $data['vendor_name'],
             'fuel_type' => $data['fuel_type_name'],
             'odometer' => $data['meter_entry']->value,
+            'reference' => $data['reference'],
+            'date' => $data['date'],
         ];
+
+        $response['specifications'] = [
+            'volume' => $data['mpg_uk'],
+            'fuel_price' => $data['price_per_volume_unit'],
+            'total' => $data['total_amount'],
+            'usage' => $data['usage_in_km'],
+            'fuel_economy' => $data['fuel_economy_for_current_user'],
+        ];
+
+        return $response;
     }
 }
