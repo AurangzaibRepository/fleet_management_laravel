@@ -1,5 +1,5 @@
 <div class="page-layout">
-    {{Form::label('name', 'Fuel Entry #'.$data['id'], ['id' => 'module-header'])}}
+    {{Form::label('name', 'Fuel Entry #'.$data['details']['id'], ['id' => 'module-header'])}}
 </div>
 
 <div class="mt-4">
