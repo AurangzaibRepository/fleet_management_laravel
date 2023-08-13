@@ -1,5 +1,6 @@
-<div class="page-layout">
+<div class="page-layout d-flex justify-content-between">
     {{Form::label('name', 'Fuel Entry #'.$data['details']['id'], ['id' => 'module-header'])}}
+    {{Form::button('Back', ['class' => 'btn-primary'])}}
 </div>
 
 <div class="mt-4">
