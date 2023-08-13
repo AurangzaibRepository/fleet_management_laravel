@@ -41,6 +41,8 @@ class FuelHistoryTransformer
 
     public function transformDetails(array $data): array
     {
+        $response['date'] = $data['date'];
+        
         $response['details'] = [
             'id' => $data['id'],
             'vehicle' => $data['vehicle_name'],
@@ -48,7 +50,6 @@ class FuelHistoryTransformer
             'fuel_type' => $data['fuel_type_name'],
             'odometer' => $data['meter_entry']->value,
             'reference' => $data['reference'],
-            'date' => $data['date'],
         ];
 
         $response['specifications'] = [
