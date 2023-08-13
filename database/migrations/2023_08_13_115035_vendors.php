@@ -13,6 +13,17 @@ class Vendors extends Migration
      */
     public function up(): void
     {
+        Schema::create('vendors', function (Blueprint $table) {
+            $table->id();
+            $table->string('name', 100);
+            $table->string('phone', 80);
+            $table->string('website', 100);
+            $table->string('address', 80);
+            $table->integer('postal_code');
+            $table->string('city', 80);
+            $table->string('country', 80);
+            $table->timestamps();
+        });
     }
 
     /**
