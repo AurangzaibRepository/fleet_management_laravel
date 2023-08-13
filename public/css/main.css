@@ -177,6 +177,10 @@ form .btn-secondary {
     color: gray;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* Tab style */
  .tab {
     overflow: hidden;
