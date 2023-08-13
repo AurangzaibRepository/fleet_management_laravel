@@ -181,6 +181,10 @@ form .btn-secondary {
     font-weight: bold;
 }
 
+.width-50 {
+    width: 50%;
+}
+
 /* Tab style */
  .tab {
     overflow: hidden;
