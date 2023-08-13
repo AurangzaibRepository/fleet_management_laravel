@@ -10,4 +10,12 @@
         </div>
     </div>
     @endforeach
+    <div class="row mt-2">
+        <div class="col-md-4">
+        {{Form::label('date', 'Date', ['class' => 'lbl-key'])}}
+        </div>
+        <div class="col-md-8">
+        {{Form::label('date', formatDate($data['date']), ['class' => 'lbl-value'])}}
+        </div>
+    </div>
 </div>
